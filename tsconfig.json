@@ -1,0 +1,26 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "Learning git.",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "start": "node dist/main.js",
+    "dev": "ts-node src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VegetationBush/Test-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VegetationBush/Test-Website/issues"
+  },
+  "homepage": "https://github.com/VegetationBush/Test-Website#readme"
+}
