@@ -1,19 +1,10 @@
 {
-  "name": "my-project",
-  "description": "Learning git.",
+  "name": "test-website",
+  "version": "1.0.0",
+  "description": "Learning to create a website",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w",
-    "strict": true,
-    "start": "node dist/main.js",
-    "dev": "ts-node src/main.ts"
-  },
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "target": "ES6",
-    "module": "commonjs",
-    "version": true
+    "start": "live-server"
   },
   "repository": {
     "type": "git",

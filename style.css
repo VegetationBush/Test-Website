@@ -1,9 +1,52 @@
 body {
-  background-color: rgb(30, 179, 198);
+	background-color: rgb(30, 179, 198);
 }
 h1 {
-  color: blue;
+	color: blue;
 }
 p {
-  color: red;
+	color: red;
+}
+#testButton {
+	display: inline-block;
+  animation: slideRight 3s infinite ease-in-out;
+}
+#testButton1 {
+  background-color: #4caf50; /* green */
+	color: white; /* text color */
+	padding: 10px 20px; /* spacing inside button */
+	font-size: 16px;
+	border: none; /* remove default border */
+	border-radius: 8px; /* rounded corners */
+	cursor: pointer; /* mouse pointer on hover */
+	transition: all 0.3s ease; /* smooth hover animation */
+	background: linear-gradient(45deg, #4caf50, #2e8b57);
+	color: white;
+	padding: 12px 24px;
+	font-size: 18px;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  animation: shrink 1s ease-in-out 1 forwards;
+}
+#testButton1:hover {
+  box-shadow: 0 8px 14px rgba(0,0,0,0.4);
+  transform: translateY(-3px);
+  animation: bulge 0.3s ease-in-out 1 forwards;
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(0); }    /* start position */
+  50% { transform: translateX(100px); } /* halfway */
+  100% { transform: translateX(0); }  /* end position */
+}
+@keyframes bulge {
+  0% { transform: scale(1); }    /* start position */
+  100% { transform: scale(2); }  /* end position */
+}
+@keyframes shrink {
+  0% { transform: scale(2); }    /* start position */
+  100% { transform: scale(1); }  /* end position */
 }
